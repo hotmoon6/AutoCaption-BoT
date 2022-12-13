@@ -20,7 +20,7 @@ start_message = """
 <b>⚠️ MɪɴᴅfʟᴀʏᴇʀsMɪʀʀᴏʀ</b>"""
 
 about_message = """
-<b>• Name : <a href=https://t.me/{username}>AutoCaption V1</a></b>
+<b>• Name : <a href=https://t.me/{username}</a></b>
 <b>• Developer : <a href=https://t.me/arvinxoxo>𐒡ᎵᎥᏧ𐒢𐒍</a></b>
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>

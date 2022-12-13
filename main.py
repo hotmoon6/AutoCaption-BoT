@@ -13,20 +13,20 @@ AutoCaptionBot = pyrogram.Client(
    name="AutoCaptionBot", api_id=app_id, api_hash=api_hash, bot_token=bot_token)
 
 start_message = """
-<b>👋Hello {}</b>
+<b>👋Hello {},</b>
 <b>I am an AutoCaption bot</b>
 <b>All you have to do is add me to your channel and I will show you my power</b>
 
 <b>⚠️ MɪɴᴅfʟᴀʏᴇʀsMɪʀʀᴏʀ</b>"""
 
 about_message = """
-<b>• Name : [AutoCaption V1](t.me/{username})</b>
-<b>• Developer : [𐒡ᎵᎥᏧ𐒢𐒍](https://t.me/arvinxoxo)
+<b>• Name : <a href=https://t.me/{username}>AutoCaption V1</a></b>
+<b>• Developer : <a href=https://t.me/arvinxoxo>𐒡ᎵᎥᏧ𐒢𐒍</a></b>
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
 <b>• Credits : <a href=https://t.me/arvinxoxo>Click Here</a></b>
 
-<b>⚠️ MɪɴᴅfʟᴀʏᴇʀsMɪʀʀᴏʀ<\b>"""
+<b>⚠️ MɪɴᴅfʟᴀʏᴇʀsMɪʀʀᴏʀ</b>"""
 
 @AutoCaptionBot.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))
 def start_command(bot, update):

@@ -16,15 +16,17 @@ start_message = """
 <b>👋Hello {}</b>
 <b>I am an AutoCaption bot</b>
 <b>All you have to do is add me to your channel and I will show you my power</b>
-<b>@Mo_Tech_YT</b>"""
+
+<b>⚠️ MɪɴᴅfʟᴀʏᴇʀsMɪʀʀᴏʀ</b>"""
 
 about_message = """
 <b>• Name : [AutoCaption V1](t.me/{username})</b>
-<b>• Developer : [Muhammed](https://github.com/PR0FESS0R-99)
+<b>• Developer : [𐒡ᎵᎥᏧ𐒢𐒍](https://t.me/arvinxoxo)
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
-<b>• Updates : <a href=https://t.me/Mo_Tech_YT>Click Here</a></b>
-<b>• Source Code : <a href=https://github.com/PR0FESS0R-99/AutoCaption-Bot>Click Here</a></b>"""
+<b>• Credits : <a href=https://t.me/arvinxoxo>Click Here</a></b>
+
+<b>⚠️ MɪɴᴅfʟᴀʏᴇʀsMɪʀʀᴏʀ<\b>"""
 
 @AutoCaptionBot.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))
 def start_command(bot, update):
@@ -41,7 +43,7 @@ def about_callback(bot, update):
 
 @AutoCaptionBot.on_message(pyrogram.filters.channel)
 def edit_caption(bot, update: pyrogram.types.Message):
-  if os.environ.get("custom_caption")
+  if os.environ.get("custom_caption"):
       motech, _ = get_file_details(update)
       try:
           try: update.edit(custom_caption.format(file_name=motech.file_name))
@@ -89,7 +91,7 @@ def about_buttons(bot, update):
    ]]
   return pyrogram.types.InlineKeyboardMarkup(buttons)
 
-print("Telegram AutoCaption V1 Bot Start")
-print("Bot Created By https://github.com/PR0FESS0R-99")
+print("Bot Started💥")
+print("Ⓒ Bot of Mindflayer's Mirror")
 
 AutoCaptionBot.run()
